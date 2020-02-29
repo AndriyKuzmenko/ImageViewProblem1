@@ -22,9 +22,17 @@ public class MainActivity extends AppCompatActivity
     {
         Random myRandom=new Random();
         int x=myRandom.nextInt(3);
-        if (x==0)
+        switch(x)
         {
-            myImageView.setImageResource(R.drawable.londoneye);
+            case 0:
+                myImageView.setImageResource(R.drawable.londoneye);
+                break;
+            case 1:
+                myImageView.setImageResource(R.drawable.wullie);
+                break;
+            case 2:
+                myImageView.setImageResource(R.drawable.niagara);
+                break;
         }
     }
 }
