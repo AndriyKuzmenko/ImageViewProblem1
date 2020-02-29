@@ -21,16 +21,16 @@ public class MainActivity extends AppCompatActivity
     public void buttonPressed(View view)
     {
         Random myRandom=new Random();
-        int x=myRandom.nextInt(3);
+        int x=myRandom.nextInt(3)+1;
         switch(x)
         {
-            case 0:
+            case 1:
                 myImageView.setImageResource(R.drawable.londoneye);
                 break;
-            case 1:
+            case 2:
                 myImageView.setImageResource(R.drawable.wullie);
                 break;
-            case 2:
+            case 3:
                 myImageView.setImageResource(R.drawable.niagara);
                 break;
         }
